@@ -1,0 +1,11 @@
+[
+  {
+    "matcher": "tool == \"Edit\" && tool_input.file_path matches \\\"\\.(ts|tsx|js|jsx|md)\\\"",
+    "hooks": [
+      {
+        "type": "command",
+        "command": "echo '[hook] File changed: $file_path'"
+      }
+    ]
+  }
+]
