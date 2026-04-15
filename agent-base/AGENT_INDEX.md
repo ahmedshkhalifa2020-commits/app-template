@@ -36,7 +36,7 @@ Skills are reusable workflows for common development patterns. These are the PRI
 | Skill            | Folder                 | Purpose                                | Usage                           |
 | ---------------- | ---------------------- | -------------------------------------- | ------------------------------- |
 | **planning**     | `skills/planning/`     | Plan a task into clear milestones      | `/planning "Add feature X"`     |
-| **sync-project** | `skills/sync-project/`  | Validate dependency and manifest state | `/sync-project` after any task   |
+| **sync-project** | `skills/sync-project/` | Validate dependency and manifest state | `/sync-project` after any task  |
 | **tdd-workflow** | `skills/tdd-workflow/` | Implement with tests-first methodology | `/tdd` or when writing new code |
 
 **How to use skills:**
