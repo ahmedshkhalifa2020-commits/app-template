@@ -36,6 +36,7 @@ Skills are reusable workflows for common development patterns. These are the PRI
 | Skill            | Folder                 | Purpose                                | Usage                           |
 | ---------------- | ---------------------- | -------------------------------------- | ------------------------------- |
 | **planning**     | `skills/planning/`     | Plan a task into clear milestones      | `/planning "Add feature X"`     |
+| **sync-project** | `skills/sync-project/`  | Validate dependency and manifest state | `/sync-project` after any task   |
 | **tdd-workflow** | `skills/tdd-workflow/` | Implement with tests-first methodology | `/tdd` or when writing new code |
 
 **How to use skills:**
@@ -207,6 +208,7 @@ Use this section to quickly find what to do given a task type.
 2. If unsure about structure: ask the planner agent
 3. Then use `tdd-workflow` skill to implement
 4. Invoke reviewer agent before submitting
+5. Run `sync-project` skill to ensure manifest consistency
 
 ### "I need to fix a bug"
 
@@ -215,11 +217,13 @@ Use this section to quickly find what to do given a task type.
 3. Implement the fix
 4. Verify tests pass
 5. Invoke reviewer agent
+6. Run `sync-project` skill to ensure manifest consistency
 
 ### "I need to review someone's code"
 
 1. Delegate to `reviewer` agent with clear review criteria
 2. Reference `rules/common/guidelines.md` for style
+3. Run `sync-project` skill to ensure manifest consistency
 
 ### "System feels disorganized or missing something"
 
@@ -227,6 +231,7 @@ Use this section to quickly find what to do given a task type.
 2. Create new agent/skill/rule following the naming rules above
 3. Update this index immediately
 4. Document the addition clearly
+5. Run `sync-project` skill to ensure manifest consistency
 
 ---
 

@@ -7,5 +7,14 @@
         "command": "echo '[hook] File changed: $file_path'"
       }
     ]
+  },
+  {
+    "matcher": "tool == \"Edit\" AND file_path matches \"package.json\"",
+    "hooks": [
+      {
+        "type": "command",
+        "command": "echo '[hook] package.json changed → run sync-project'"
+      }
+    ]
   }
 ]
