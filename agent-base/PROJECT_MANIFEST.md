@@ -28,6 +28,7 @@ This file is the single source of truth for the current project stack, installed
 ## Installed Packages
 
 ### Dependencies
+
 - `@prisma/client` → Prisma client runtime for database access
 - `@t3-oss/env-nextjs` → environment variable handling for Next.js
 - `dotenv` → loads `.env` variables in local development
@@ -40,6 +41,7 @@ This file is the single source of truth for the current project stack, installed
 - `zod` → schema validation library
 
 ### Dev Dependencies
+
 - `@biomejs/biome` → code formatting and linting toolchain
 - `@tailwindcss/postcss` → Tailwind CSS PostCSS plugin
 - `@types/node` → Node.js TypeScript definitions
